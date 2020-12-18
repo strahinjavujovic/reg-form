@@ -1,0 +1,60 @@
+<html>
+   <head>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div id="form">
+         <h2>Registration form</h2>
+         <div id="name">
+            <label>name</label><br />
+            <input
+               type="text"
+               id="getName"
+               placeholder="insert your name"
+               minlength="2"
+               maxlength="30"
+            />
+            <div id="error1"></div>
+         </div>
+         <div id="pass">
+            <label>password</label><br />
+            <input
+               type="password"
+               id="passs"
+               placeholder="insert your password"
+               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+            />
+            <div id="error2"></div>
+         </div>
+         <div id="city">
+            <label>city</label><br />
+            <input
+               type="text"
+               id="getCity"
+               placeholder="insert city where you from"
+            />
+            <div id="error3"></div>
+         </div>
+         <div id="gender">
+            <label>Gender</label><br />
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <div id="error4"></div>
+         </div>
+
+         <br />
+         <div id="buton">
+            <button id="btn">Sumbit</button>
+         </div>
+      </div>
+      <div id="informationsh">
+         <div>
+            <h2>Informations</h2>
+         </div>
+         <div id="informationsall"></div>
+      </div>
+      <script src="main.js"></script>
+   </body>
+</html>
